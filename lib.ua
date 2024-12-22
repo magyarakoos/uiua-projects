@@ -1,4 +1,4 @@
 # Experimental!
-CodeRenderer ~ "code-renderer/main.ua" ~ Render!
+~ "code-renderer/main.ua" ~ Render!
 
-Render! ← CodeRenderer~Render!^0
+F ← 10
