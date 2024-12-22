@@ -90,42 +90,47 @@ ApplySpecialColor ← (
   ▽÷9⊙≡↯⤙×0.6N
 )
 
-&fras"code.ua"
-Replace "@ " "@\\s"
-⊜□⊸≠@\n
+Render! ←^ (
+  ⊢
 
-⍚(⊃(/↥[⊃(
-      | ×3 MarkBeforeDigit @e
-      | ×3 MarkBeforeDigit @.
-      | ×3 MarkBeforeDigit @/
-      | ×3 MarkBeforeDigit @¯
-      | ×2 MarkComment
-      | MarkStrings
-      | MarkChar @\\
-      | MarkChar @@
-      )]
-  | ⊸FindGlyphColors
+  Replace "@ " "@\\s"
+  ⊜□⊸≠@\n
+
+  ⍚(⊃(/↥[⊃(
+        | ×3 MarkBeforeDigit @e
+        | ×3 MarkBeforeDigit @.
+        | ×3 MarkBeforeDigit @/
+        | ×3 MarkBeforeDigit @¯
+        | ×2 MarkComment
+        | MarkStrings
+        | MarkChar @\\
+        | MarkChar @@
+        )]
+    | ⊸FindGlyphColors
+    )
   )
-)
 
-⍚≡⨬(
-  ∘
-| 1 ↯2⊗ □LightBlueG Glyphs ◌◌
-| 1 ↯2⊗ □GrayG Glyphs ◌◌
-| 1 ↯2⊗ □OrangeG Glyphs ◌◌
-)
+  ⍚≡⨬(
+    ∘
+  | 1 ↯2⊗ □LightBlueG Glyphs ◌◌
+  | 1 ↯2⊗ □GrayG Glyphs ◌◌
+  | 1 ↯2⊗ □OrangeG Glyphs ◌◌
+  )
 
-:⊙,
-⍚(◇≡⨬◌⊃⋅1(⍜⊙⊣⊙◌⊙◌) ⊸≠¯1 MarkFunctions)
+  :⊙,
+  ⍚(◇≡⨬◌⊃⋅1(⍜⊙⊣⊙◌⊙◌) ⊸≠¯1 MarkFunctions)
 
-:⊙,
-⍚(◇(∧⨬◌(∩(⍜⊙⊡⊙◌: ⍜-₁⟜⊸⊡)⟜:) :°⊏) ∊SubscriptG)
+  :⊙,
+  ⍚(◇(∧⨬◌(∩(⍜⊙⊡⊙◌: ⍜-₁⟜⊸⊡)⟜:) :°⊏) ∊SubscriptG)
 
-/⊂⬚0≡◇(
-  ≡(⨬(×⊓(
-        ◇ApplySpecialColor⊡:SpecialColors
-      | layout{N White})
-    | layout⊟N⬚WhiteC⊡:Colors
-    )⟜⊡)
-  ⤸1♭₃⤸0_2
+  /⊂⬚0≡◇(
+    ≡(⨬(×⊓(
+          ◇ApplySpecialColor⊡:SpecialColors
+        | layout{N White})
+      | layout⊟N⬚WhiteC⊡:Colors
+      )⟜⊡)
+    ⤸1♭₃⤸0_2
+  )
+
+  "0"&ims
 )
