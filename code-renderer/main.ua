@@ -91,8 +91,7 @@ ApplySpecialColor ← (
 )
 
 Render! ←^ (
-  ⊢
-
+  °□⊢
   Replace "@ " "@\\s"
   ⊜□⊸≠@\n
 
@@ -132,5 +131,5 @@ Render! ←^ (
     ⤸1♭₃⤸0_2
   )
 
-  "0"&ims
+  ""&ims
 )
