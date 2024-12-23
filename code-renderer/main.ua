@@ -1,11 +1,10 @@
 # Experimental!
-N ← 200
 
 SpaceG     ← $ 
 GrayG      ← $ #_
 GreenG     ← $ ¬±¯⌵√∿⌊⌈⁅⧻△⇡⊢⊣⇌♭¤⋯⍆⍏⍖⊚⊛◴◰□⋕&
 BlueG      ← $ =≠<≤>≥+-×÷◿∨ⁿₙ↧↥∠ℂ≍⊟⊂⊏⊡↯↙↘↻⤸▽⌕⦷∊⊗⍤
-YellowG    ← $ /∧\∵≡⍚⊞⧅⧈⍥⊕⊜◇⋅⊙𝄐⟜⊸⤙⤚◠◡𝄈⌅°⌝⍩∂∫
+YellowG    ← $ /∧\∵≡⍚⊞⧅⧈⍥⊕⊜◇⋅⊙⟜⊸⤙⤚◠◡⌅°⌝⍩∂∫
 MagentaG   ← $ ⍜⊃⊓⍢⬚⨬⍣
 RedG       ← $ ⚂
 OrangeG    ← $ ηπτ∞¯0123456789
@@ -84,14 +83,13 @@ FindGlyphColors ← (
   ↧1⊗1⊸<∞⍉
 )
 
-ApplySpecialColor ← (
+ApplySpecialColor! ← (
   ≡⊂:1
   ∧⍜⊏(↯3)0_¯1
-  ▽÷9⊙≡↯⤙×0.6N
+  ▽÷9⊙≡↯⤙×0.6^0
 )
 
-Render! ←^ (
-  °□⊢
+Render! ← (
   Replace "@ " "@\\s"
   ⊜□⊸≠@\n
 
@@ -124,12 +122,12 @@ Render! ←^ (
 
   /⊂⬚0≡◇(
     ≡(⨬(×⊓(
-          ◇ApplySpecialColor⊡:SpecialColors
-        | layout{N White})
-      | layout⊟N⬚WhiteC⊡:Colors
+          ◇ApplySpecialColor!^0⊡:SpecialColors
+        | layout{^0 White})
+      | layout⊟^0⬚WhiteC⊡:Colors
       )⟜⊡)
     ⤸1♭₃⤸0_2
   )
 
-  ""&ims
+  &fwa"render.png" img"png"
 )
