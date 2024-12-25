@@ -1,7 +1,7 @@
 # Experimental!
 
 SpaceG     ← $ 
-GrayG      ← $ #_
+GrayG      ← $ _
 GreenG     ← $ ¬±¯⌵√∿⌊⌈⁅⧻△⇡⊢⊣⇌♭¤⋯⍆⍏⍖⊚⊛◴◰□⋕&
 BlueG      ← $ =≠<≤>≥+-×÷◿∨ⁿₙ↧↥∠ℂ≍⊟⊂⊏⊡↯↙↘↻⤸▽⌕⦷∊⊗⍤
 YellowG    ← $ /∧\∵≡⍚⊞⧅⧈⍥⊕⊜◇⋅⊙⟜⊸⤙⤚◠◡⌅°⌝⍩∂∫
@@ -69,7 +69,7 @@ Replace ← ⍜⊜∘⊞⋅∘⊸⦷⊙:
 
 MarkStrings     ← ⬚0↯ ¤⊃⧻(◿2\+ ⍜⊚(⍜▽+₁◿2°⊏) =@")
 MarkChar        ← ⍜⊚(+₁ ▽¬⤚∊⟜-₁)=
-MarkComment     ← \↥=@#
+MarkComment     ← \↥ ⍜⊚(▽ ⬚@$≠@@ :⊙⊡ ⟜-₁) ⊸=@#
 MarkBeforeDigit ← ⍜⊚(▽⤚(≡⍣(ⁿ0⋕)0 ⬚@$⊏+₁))⊸=
 MarkFunctions ← ⬚¯1↯ ¤⊃⧻(
   Functions¤¤
