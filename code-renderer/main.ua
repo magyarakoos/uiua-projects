@@ -67,10 +67,13 @@ Functions ← {
 
 Replace ← ⍜⊜∘⊞⋅∘⊸⦷⊙:
 
-MarkStrings     ← ⬚0↯ ¤⊃⧻(◿2\+ ⍜⊚(⍜▽+₁◿2°⊏) =@")
+MarkStrings ← ⬚0↯ ¤⊃⧻(
+  ⍜⊚(▽⤚(≠@\\ ⬚@$⊏-₁)) ⊸=@"
+  ◿2\+ ⍜⊚(⍜▽+₁◿2°⊏)
+)
 MarkChar        ← ⍜⊚(+₁ ▽¬⤚∊⟜-₁)=
 MarkComment     ← \↥ ⍜⊚(▽ ⬚@$≠@@ :⊙⊡ ⟜-₁) ⊸=@#
-MarkBeforeDigit ← ⍜⊚(▽⤚(≡⍣(ⁿ0⋕)0 ⬚@$⊏+₁))⊸=
+MarkBeforeDigit ← ⍜⊚(▽⤚(↧∩(≡⍣(ⁿ0⋕)0 ⬚@$⊏) ⊙,⊃+₁-₁))⊸=
 MarkFunctions ← ⬚¯1↯ ¤⊃⧻(
   Functions¤¤
   ⬚0≡◇(/↥ ⬚0≡◇(°⊚ ♭⊞+ ⇡⊃⧻(⊚⌕)))
@@ -131,3 +134,9 @@ Render! ← (
 
   &fwa"render.png" img"png"
 )
+
+$ 0.5
+$ # no comment
+$ ⍤.0
+$ "\"foo"
+Render!100
