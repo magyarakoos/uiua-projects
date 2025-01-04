@@ -1,4 +1,3 @@
-# Already wrote this, might as well use it
 ┌─╴BigInt ~ Base
   B   ↚ 10
   New ← ⌅(∵⋕⇌|⍥⋅"0"=₀⊸⧻ ▽¬\↧⊸=@0 ⇌/◇⊂°⋕)
@@ -24,7 +23,7 @@
       ⋅◌∧(⟜(⊙⊂: ⌊⊃÷◿ ⊙(+⊙(×B))):)⇌
     )
   )
-  Search! ← ⍥(⍜⊡◌:⊙(⊃◇^0□ShortDiv2)⟜/◇Add)∞
+  Search! ← ⊙⋅◌ ⍥(⍜⊡◌:⊙(⊙□◡◇^0ShortDiv2)⟜/◇Add)∞
   Div ← (
     ⊃:(Search!(Le Pad Mul)□₂"0",)
     °□⊡⊣⊚ ≡◇Le⊸⊙⍚Mul ∩¤
@@ -33,6 +32,6 @@
 
   Base ← ⌅(
     ⋅⋅⇌ ⍢⟜(⊙(⊂⋕)⊃Div Mod)⋅(Gt"0") ⊓°⋕⊙[]
-  | /◇Add⍚LinearPow ▽:°⊏⇌:
+  | ⬚@0/◇Add⍚LinearPow ▽:°⊏⇌:
   )
 └─╴
