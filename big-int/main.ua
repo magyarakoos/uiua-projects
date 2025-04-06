@@ -25,7 +25,7 @@
   )
   Search! ← ⊙⋅◌ ⍥(⍜⊡◌:⊙(⊙□◡◇^0ShortDiv2)⟜/◇Add)∞
   Div ← (
-    ⊃:(Search!(Le Pad Mul)□₂"0",)
+    ⊃:(Search!(Le Pad Mul)◡⋅(□₂"0"))
     °□⊡⊣⊚ ≡◇Le⊸⊙⍚Mul ∩¤
   )
   Mod ← Sub Mul◡Div
